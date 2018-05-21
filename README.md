@@ -11,14 +11,14 @@ Handles showing media based on device display and media queries
 import {Image, Resolution} from '@lod/react-screen-media';
 
 <Image images={{
-    [Resolution.X2_00]: require('./assets/images/img-2x.png')
-    [Resolution.X1_00]: require('./assets/images/img-2x.png')
+    [Resolution.X2_00]: require('./assets/images/img-2x.png'),
+    [Resolution.X1_00]: require('./assets/images/img-1x.png')
 }} />
 ```
 
 ```jsx harmony
 <Image images={{
-    '2.0': require('./assets/images/img-2x.png')
+    '2.0': require('./assets/images/img-2x.png'),
     '1.5': require('./assets/images/img-1_5x.png')
 }} />
 ```
