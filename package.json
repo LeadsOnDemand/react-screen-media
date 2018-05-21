@@ -1,5 +1,5 @@
 {
-  "name": "react-screen-media",
+  "name": "@lod/react-screen-media",
   "version": "1.0.0-beta1",
   "description": "Handles showing media based on device display and media queries",
   "main": "index.js",
@@ -16,7 +16,7 @@
     "media-query",
     "retina"
   ],
-  "author": "anigeneor",
+  "author": "Robin Schultz <robin.schultz@leadsondemandinc.com> (https://github.com/anigenero)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/LeadsOnDemand/react-screen-media/issues"

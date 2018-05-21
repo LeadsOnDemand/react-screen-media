@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import {Image} from "../Image";
-import {Resolution} from "../../../const/resolution";
+import {Resolution} from "../../../constants/resolution";
 import {mount} from "enzyme";
 
 describe('Image', () => {

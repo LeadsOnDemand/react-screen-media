@@ -1,5 +1,5 @@
 import {_PIXEL_RATIOS, getPixelRatio} from "../screen.util";
-import {Resolution} from "../../const/resolution";
+import {Resolution} from "../../constants/resolution";
 
 describe('screen util', () => {
 

@@ -1,4 +1,4 @@
-import {Resolution} from "../const/resolution";
+import {Resolution} from "../constants/resolution";
 
 export const _PIXEL_RATIOS: { [key: string]: string } = {
     [Resolution.X0_50]: "(-webkit-min-device-pixel-ratio: 0.5), (min--moz-device-pixel-ratio: 0.5), (-o-min-device-pixel-ratio: 2/4), (min-resolution: 1.25dppx)",
