@@ -18,6 +18,13 @@ export const _PIXEL_RATIOS: { [key: string]: string } = {
 let _pixelRatio: number = -1;
 
 /**
+ * Clears the pixel ratio
+ */
+export const clearPixelRatio = () => {
+	_pixelRatio = -1;
+};
+
+/**
  * Determines the pixel ratio from a query
  *
  * @private

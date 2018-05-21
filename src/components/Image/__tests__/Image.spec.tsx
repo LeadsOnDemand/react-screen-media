@@ -3,9 +3,14 @@ import * as ReactDOM from 'react-dom';
 
 import { mount } from 'enzyme';
 import { Resolution } from '../../../constants/resolution';
+import { clearPixelRatio } from '../../../util/screen.util';
 import { Image } from '../Image';
 
 describe('Image', () => {
+
+	beforeEach(() => {
+		clearPixelRatio();
+	});
 
 	test('renders without crashing', () => {
 		const div = document.createElement('div');

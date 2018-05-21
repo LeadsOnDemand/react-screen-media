@@ -1,7 +1,11 @@
 import { Resolution } from '../../constants/resolution';
-import { _PIXEL_RATIOS, getPixelRatio } from '../screen.util';
+import { _PIXEL_RATIOS, clearPixelRatio, getPixelRatio } from '../screen.util';
 
 describe('screen util', () => {
+
+	beforeEach(() => {
+		clearPixelRatio();
+	});
 
 	test('default', () => {
 
@@ -84,6 +88,8 @@ describe('screen util', () => {
 
 		expect(getPixelRatio()).toEqual(.5);
 
+		clearPixelRatio();
+
 		window.matchMedia = jest.fn((value) => {
 
 			if (value === _PIXEL_RATIOS[Resolution.X0_75]) {
@@ -95,6 +101,8 @@ describe('screen util', () => {
 		});
 
 		expect(getPixelRatio()).toEqual(.75);
+
+		clearPixelRatio();
 
 		window.matchMedia = jest.fn((value) => {
 
@@ -108,6 +116,8 @@ describe('screen util', () => {
 
 		expect(getPixelRatio()).toEqual(1);
 
+		clearPixelRatio();
+
 		window.matchMedia = jest.fn((value) => {
 
 			if (value === _PIXEL_RATIOS[Resolution.X1_25]) {
@@ -120,6 +130,8 @@ describe('screen util', () => {
 
 		expect(getPixelRatio()).toEqual(1.25);
 
+		clearPixelRatio();
+
 		window.matchMedia = jest.fn((value) => {
 
 			if (value === _PIXEL_RATIOS[Resolution.X1_50]) {
@@ -131,6 +143,8 @@ describe('screen util', () => {
 		});
 
 		expect(getPixelRatio()).toEqual(1.5);
+
+		clearPixelRatio();
 
 		window.matchMedia = jest.fn((value) => {
 
