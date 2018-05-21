@@ -1,6 +1,7 @@
 src/
 node_modules/
 coverage/
+.idea/
 .travis.yml
 jest.setup.js
 tsconfig.json

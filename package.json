@@ -1,6 +1,6 @@
 {
   "name": "@lod/react-screen-media",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0",
   "description": "Handles showing media based on device display and media queries",
   "main": "dist/index.js",
   "scripts": {
