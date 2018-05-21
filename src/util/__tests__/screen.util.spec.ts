@@ -42,6 +42,9 @@ describe('screen util', () => {
 
 		expect(result).toEqual(pixelRatio);
 
+		// test caching
+		expect(getPixelRatio()).toEqual(pixelRatio);
+
 	});
 
 	test('window.screen.systemXDPI', () => {
@@ -53,6 +56,9 @@ describe('screen util', () => {
 		const result = getPixelRatio();
 
 		expect(result).toEqual(3);
+
+		// test caching
+		expect(getPixelRatio()).toEqual(3);
 
 	});
 
@@ -68,6 +74,9 @@ describe('screen util', () => {
 		const result = getPixelRatio();
 
 		expect(result).toEqual(2.0);
+
+		// test caching
+		expect(getPixelRatio()).toEqual(2.0);
 
 	});
 
