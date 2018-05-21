@@ -1,0 +1,78 @@
+{
+  "name": "react-screen-media",
+  "version": "1.0.0-beta1",
+  "description": "Handles showing media based on device display and media queries",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeadsOnDemand/react-screen-media.git"
+  },
+  "keywords": [
+    "react",
+    "media-query",
+    "retina"
+  ],
+  "author": "anigeneor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeadsOnDemand/react-screen-media/issues"
+  },
+  "homepage": "https://github.com/LeadsOnDemand/react-screen-media#readme",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.10",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/jest": "^22.2.3",
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.4",
+    "jest-cli": "^22.4.4",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-sonarts": "^1.6.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/src/__mocks__/style.mock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/file.mock.js"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "setupFiles": [
+      "<rootDir>/jest.setup.js",
+      "<rootDir>/src/__mocks__/requestAnimationFrame.js",
+      "<rootDir>/src/__mocks__/enzyme.setup.ts"
+    ],
+    "transform": {
+      "^.+\\.ts(x|)?$": "ts-jest",
+      "^.+\\.js(x|)?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-apollo|apollo-client))"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  }
+}
