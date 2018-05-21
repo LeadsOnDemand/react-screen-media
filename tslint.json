@@ -3,6 +3,11 @@
     "tslint:recommended",
     "tslint-sonarts"
   ],
+  "linterOptions": {
+    "exclude": [
+      "**/__tests__/*.spec.ts"
+    ]
+  },
   "rules": {
     "ban": false,
     "class-name": true,

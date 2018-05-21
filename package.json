@@ -4,7 +4,8 @@
   "description": "Handles showing media based on device display and media queries",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npm run lint && tsc",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
     "test": "jest --coverage"
   },
   "repository": {
